@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Quote Generator</title>
+</head>
+<body class="h-screen relative bg-blue-950 flex flex-col items-center justify-center">
+    <div class="bg-black w-full absolute border-b-2 border-fuchsia-600 top-0 h-14">
+    <h1 class="cursor-pointer underline absolute text-xl text-fuchsia-600 top-3 left-4">QuoteForge.</h1>
+    <br>
+            <nav class="grid top-14  border-b-2 border-fuchsia-600 w-full opacity-0 bg-black h-auto p-4 md:flex md:top-0 absolute right-0 items-center justify-evenly md:opacity-100 md:w-10/12 md:h-14 text-sky-500 z-10">
+                <a class="cursor-pointer text-lg home">Home</a>
+                <a class="cursor-pointer text-lg gita">Mahabharat Quote</a>
+                <a class="cursor-pointer text-lg bible">Bible Quote</a>
+                <a class="cursor-pointer text-lg joke">Joke</a>
+                </nav>
+            <div name="menu" onclick="Menu(this)" class="bar cursor-pointer mt-4 mr-4 absolute top-0 w-7 right-0 md:hidden">
+                <div class="line1 rounded-sm mb-1.5 bg-sky-500 h-1"></div>
+                <div class="line2 rounded-sm mb-1.5 bg-sky-500 h-1"></div>
+                <div class="line3 rounded-sm bg-sky-500 h-1"></div>
+            </div> 
+    </div>
+    <!-- mahabarat -->
+            <div class="box mbox p-3 relative w-11/12 lg:w-1/2 flex flex-col items-center justify-evenly min-h-72 rounded-3xl" style="background-image: url(images/bg1.jpg);">
+                <img src="images/m0.png" alt="logo" class="absolute top-2.5 h-10 left-3"> 
+                 <p class="absolute top-5 left-14 text-xl text-orange-400">Mahabharat</p>   
+                <div class="container flex flex-col">
+                    <div class="flex items-center mt-12">
+                        <img src="images/m0.png" alt="mahabarat" class="mimg h-36 w-40">
+                        <p class="mquote ml-3 text-white text-lg">
+                            “When duty is neglected, calamity follows like a wheel of a cart.”
+                        </p>    
+                    </div> 
+                        <p class="mname  text-sky-500 p-4 text-lg">
+                            – Bhagavad Gita
+                        </p> 
+                    </div>
+                <div class="btn  w-9/12 flex items-center justify-evenly text-lg text-white">
+                    <div class="btn mbtn cursor-pointer bg-sky-500 p-3 rounded-lg">Next Quote</div>
+                    <div class="copy mcopy cursor-pointer bg-sky-500 p-3 rounded-lg">Copy</div>
+                </div>
+            </div>
+    <!-- bible  -->
+            <div class="box bbox p-3 relative w-11/12 lg:w-1/2 flex-col items-center justify-evenly min-h-72 rounded-3xl bg-center bg-cover" style="background-image: url(images/bg2.jpg);">
+                <img src="images/bible.png" alt="logo" class="absolute top-2.5 h-10 left-3"> 
+                 <p class="absolute top-3 left-14 text-xl text-amber-700">Bible</p>   
+                    <div class="flex items-center mt-10">
+                        <img src="images/b0.png" alt="bible" class="bimg h-36 w-40">
+                        <p class="bquote ml-3 text-white text-lg">
+                        "The Beauty of the image of the logo that God gave us is that it truly defines and encompasses our ministry and five key foundational Biblical truths."
+                        </p>    
+                    </div>  
+                <div class="btn  w-11/12 mt-6 flex items-center justify-evenly text-white text-lg">
+                    <div class="btn bbtn cursor-pointer bg-sky-950 p-3 rounded-lg">Next Quote</div>
+                    <div class="copy bcopy cursor-pointer bg-sky-950 p-3 rounded-lg">Copy</div>
+                </div>
+            </div>
+    <!-- joke -->
+    <div class="box jbox m-4 p-3 relative w-11/12 lg:w-2/4 flex flex-col items-center justify-center min-h-72 rounded-3xl bg-cover bg-center" style="background-image: url(images/bg3.jpg);">
+        <img src="images/jlogo.png" alt="logo" class="absolute top-2.5 h-10 left-3"> 
+         <p class="absolute top-4 left-14 text-cyan-100 text-xl">Joke</p>   
+            <div class="flex w-11/12 items-center justify-evenly mt-10">
+                <img src="images/j1.png" alt="joke" class="jimg h-28">
+                <div class="line">
+                <p class="qn ml-3 w-5/6 text-white text-xl">
+                    Why did the kid throw the watch out the window?
+                </p> 
+                <p class="text-lg"><i class="underline text-xl">Answer:</i><br>
+                    <span class="ans text-white">– So time would fly.</span>
+                </p>   
+            </div>
+            </div>  
+        <div class="btn p-3 w-11/12 flex items-center justify-evenly text-white text-lg">
+            <div class="btn jbtn cursor-pointer bg-sky-900 p-3 rounded-lg">Next Quote</div>
+            <div class="copy jcopy cursor-pointer bg-sky-900 p-3 rounded-lg">Copy</div>
+        </div>
+    </div>
+   <!-- homepage -->
+        <p class="para w-4/5 text-center text-xl text-cyan-500">
+            Welcome to QuoteForge, where inspiration meets innovation! 
+            Unleash the power of words with our dynamic and user-friendly quote 
+            generator. Our platform is designed to spark creativity, motivation, 
+            and positivity by delivering personalized and thought-provoking 
+            quotes just for you.
+        </p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
